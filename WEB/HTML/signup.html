@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <!-- Link to JS File -->
+    <script src="/JS/signup_script.js" async></script>
+    <!-- Link to CSS File -->
+    <link rel="stylesheet" href="/CSS/signup.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <div class="background"></div>
+    <div class="page">
+        <h1>Sign up</h1>
+        <form action="#" method="post">
+            <!-- Baris untuk memasukkan Email -->
+            <div class="field email-field">
+                <div class="input_field ">
+                    <input type="email" placeholder="Enter your email" class="email">
+                </div>
+                <!-- span untuk menambahkan icon error ketika email tidak valid -->
+                <span class="error email-error">
+                    <i class='bx bx-error-circle error-icon'></i>
+                    <p class="error_text">Please enter a valid email</p>
+                </span>
+            </div>
+
+            <!-- Create a password -->
+            <div class="field create-password">
+                <div class="input_field">
+                    <input type="password" placeholder="Create password" class="password">
+                    <i class='bx bxs-hide show-hide' ></i>
+                </div>
+                <!-- span untuk memberitahu jika password tidak memenuhi persyaratan -->
+                <span class="error password-error">
+                    <i class='bx bx-error-circle error-icon'></i>
+                    <p class="error_text">Please enter atleast 8 character with number, symbol, small and capital letter.</p>
+                </span>
+            </div>
+
+            <!-- Re-enter your password -->
+            <div class="field confirm-password">
+                <div class="input_field">
+                    <input type="password" placeholder="Confirm password" class="cPassword">
+                    <i class='bx bxs-hide show-hide' ></i>
+                </div>
+                <!-- span untuk memberitahu jika password tidak sama -->
+                <span class="error cPassword-error">
+                    <i class='bx bx-error-circle error-icon'></i>
+                    <p class="error_text">Passwords do not match!</p>
+                </span>
+            </div>
+
+            <div class="click_field button">
+                <input type="submit" value="Continue">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
