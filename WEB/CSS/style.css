@@ -22,8 +22,8 @@ body {
 
 .center {
     position: absolute;
-    top: 55%;
-    left: 70%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
     background: transparent;
